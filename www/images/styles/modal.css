@@ -1,0 +1,228 @@
+/* Modal content styling */
+
+.modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  margin: 0;
+}
+
+.modal-sm {
+  width: 20vw;
+}
+
+.modal-body {
+  position: relative;
+  padding: 20px;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal-backdrop.startup-backdrop {
+  display: block;
+  background-color: var(--color-slate-grey) !important;
+  opacity: 0.7 !important;
+}
+
+.modal-backdrop.login-backdrop {
+  display: block;
+  background-color: white !important;
+  opacity: 1 !important;
+}
+
+.modal-content {
+  height: fit-content;
+  max-height: 92vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(16, 77, 101, 0.15);
+  border-radius: 20px;
+}
+
+.model-table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+}
+
+.model-table thead th {
+  background: var(--color-blue);
+  color: white;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.model-table thead th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.model-table thead th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.model-table tbody td {
+  padding: 10px 12px;
+  background: white;
+  border-bottom: 1px solid #E5E5E5;
+  color: #333;
+  line-height: 1.5;
+}
+
+.model-table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 8px;
+}
+
+.model-table tbody tr:last-child td:last-child {
+  border-radius: 0 0 8px 0;
+}
+
+.model-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.model-table tbody td:first-child {
+  color: var(--color-blue);
+  width: 30%;
+}
+
+.model-table tbody tr:hover td {
+  background: #FAFAFA;
+}
+
+.setting-item {
+  background: #F5F5F7;
+  border: 0px;
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0px 5px 0px;
+}
+      
+.setting-item:hover {
+  transform: translateY(-1px);
+}
+      
+.setting-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+      
+.setting-text {
+  flex: 1;
+}
+      
+.setting-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-blue);
+  margin-bottom: 4px;
+}
+      
+.setting-description {
+  font-size: 13px;
+  color: var(--color-slate-grey);
+  line-height: 1.5;
+}
+
+.setting-description p {
+  margin: 10px 0px !important;
+}
+
+.setting-item input[type='checkbox'] {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  appearance: none;
+  background: var(--color-slate-grey);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin: 0;
+}
+      
+.setting-item input[type='checkbox']:checked {
+  background: var(--color-blue);
+}
+      
+.setting-item input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+      
+.setting-item input[type='checkbox']:checked::before {
+  left: 22px;
+}
+
+.setting-version {
+  background: #F5F5F7;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-blue);
+  margin-bottom: 16px;
+  padding: 5px;
+  width: fit-content;
+}
+
+details {
+  border: 1px solid var(--color-blue);
+  border-radius: 12px;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  background-color: #F5F5F7;
+  transition: background-color 0.3s ease;
+  color: var(--color-blue);
+}
+
+details:hover,
+details[open] {
+  background-color: white;
+  color: var(--color-blue);
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+details p {
+  color: #333 !important;
+  font-size: 1.3rem !important;
+}
+
+.file-upload-wrapper {
+  flex-shrink: 0;
+}
+
+.file-upload-wrapper .btn {
+  border-radius: 12px;
+  background-color: white;
+  color: var(--color-slate-grey);
+  border-color: var(--color-slate-grey);
+}
+
+.file-upload-wrapper .btn:hover {
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+}

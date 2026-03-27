@@ -1,0 +1,41 @@
+/* Loading assets */
+
+#divLoading {
+  display: none;
+}
+
+#divLoading.show {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  background-image: url('../loader.gif');
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+div#loadinggif.show {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  z-index: 101;
+  transform: translateY(-50%);
+  width: 100%;
+  margin-left: -16px;
+  margin-top: -16px;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99;
+  display: none;
+}

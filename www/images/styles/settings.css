@@ -1,0 +1,61 @@
+/* Settings sidebar styling */
+
+.settings-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: 100vh;
+  background-color: transparent;
+  color: white;
+  border-left: 2px solid var(--color-blue);
+  padding: 8px !important;
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(16, 77, 101, 0.15);
+}
+
+.settings-badge {
+  background-color: var(--color-red);
+  color: white;
+  border-radius: 9999px;
+  padding: 4px;
+  font-size: 1rem;
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+}
+
+.settings-buttons {
+  background-color: white !important;
+  color: var(--color-blue) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  transition: all 0.2s ease !important;
+  margin-bottom: 5px !important;
+  font-size: large;
+}
+
+.settings-buttons:hover {
+  color: white !important;
+  background-color: var(--color-blue) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(16, 77, 101, 0.3) !important;
+}
+
+.settings-buttons:active {
+  color: white !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px rgba(16, 77, 101, 0.2) !important;
+}
+
+.settings-buttons:focus {
+  color: white !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(16, 77, 101, 0.3) !important;
+}

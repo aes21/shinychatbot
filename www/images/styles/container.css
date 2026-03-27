@@ -1,0 +1,103 @@
+/* Container styling */
+
+.btn-group-container-sw {
+  display: flex !important;
+  gap: 6px !important;
+  justify-content: center !important;
+  margin-top: 6px;
+}
+
+.btn-group-container-sw .btn {
+  background-color: white !important;
+  border: 1px solid var(--color-blue) !important;
+  border-radius: 10px !important;
+  width: auto !important;
+  height: 25px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 5px !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 4px rgba(16, 77, 101, 0.2) !important;
+  color: var(--color-blue) !important;
+  font-size: 9px !important;
+}
+
+.btn-group-container-sw .btn:hover {
+  background-color: var(--color-blue) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(16, 77, 101, 0.3) !important;
+  color: white !important;
+}
+
+.btn-group-container-sw .btn.active {
+  background-color: var(--color-dark-blue) !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px rgba(16, 77, 101, 0.2) inset !important;
+  color: white !important;
+}
+
+.btn-group-container-sw .btn:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px rgba(16, 77, 101, 0.2) !important;
+  color: white !important;
+}
+
+.btn-group-container-sw .btn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(16, 77, 101, 0.3) !important;
+  color: white !important;
+}
+
+.selectize-input {
+  border: 1px solid var(--color-blue) !important;
+  color: var(--color-blue);
+  border-radius: 12px !important;
+  background: transparent !important;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  transition: all 0.2s ease-in-out;
+  cursor: text;
+  overflow-x: auto;
+  font-size: 11px !important;
+}
+
+.selectize-input.focus {
+  border-color: var(--color-blue) !important;
+}
+
+.selectize-input .item {
+  font-weight: bold;
+}
+
+.selectize-dropdown {
+  border: 1px solid var(--color-blue);
+  border-radius: 12px;
+  background: white;
+  padding: 6px 0;
+  animation: fadeIn 0.15s ease-in-out;
+  z-index: 9999 !important;
+  bottom: 100% !important;
+  top: auto !important;
+}
+
+.selectize-dropdown .option {
+  padding: 10px 14px;
+  font-size: 11px !important;
+  color: var(--color-blue) !important;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.selectize-dropdown .option.selected {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.selectize-dropdown .option:hover,
+.selectize-dropdown .option.active {
+  background-color: #F5F5F7 !important;
+}

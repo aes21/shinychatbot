@@ -1,0 +1,76 @@
+/* Logbook styling */
+
+.chat_logbook {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  max-width: 15vw;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.chat_logbook .btn {
+  background-color: transparent;
+  color: var(--color-blue);
+  width: 100%;
+  text-align: left;
+  border-radius: 12px;
+  border: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 12px;
+}
+
+.chat_logbook .selected {
+  background-color: #F5F5F7;
+}
+
+.chat_logbook .btn:active:hover,
+.chat_logbook .btn:hover {
+  background-color: #F5F5F7;
+}
+
+.logbook-buttons {
+  background-color: transparent !important;
+  border-radius: 12px;
+  border: 0px;
+  width: 35px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px !important;
+  color: var(--color-red) !important;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logbook-buttons:hover {
+  background-color: #EBC7CF !important;
+}
+
+.nchat_button {
+  background-color: transparent;
+  color: var(--color-blue);
+  width: 15vw !important;
+  text-align: left;
+  border-radius: 12px;
+  border: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 12px;
+}
+
+.nchat_button:hover {
+  background-color: #F5F5F7 !important;
+  color: var(--color-blue) !important;
+}
+
+.nchat_button:active:hover {
+  background-color: transparent;
+  color: var(--color-blue) !important;
+}
