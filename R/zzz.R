@@ -1,7 +1,7 @@
 #'
 #'
 options(
-  ollama.url = getOption("ollama.url", default = "http://hal.appliedexomics.com:11434/api"),
+  ollama.url = getOption("ollama.url", default = "http://localhost:11434/api"),
   shiny.maxRequestSize = 30 * 1024^2
 )
 
