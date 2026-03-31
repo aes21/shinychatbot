@@ -248,7 +248,7 @@ chatbotServer <- function(id, new_chat, delete_chat, user_data, ...) {
         log = append(log, list(
           list(
             role = "user",
-            content = "Given this chat log, give a short title for this conversation."
+            content = "Given this chat log, give a short (one sentence) summary heading for this conversation. Your response should include only text. Never use any special characters in your response."
           )
         ))
         name_request = chat_builder(log = log, model = input$model_select)
