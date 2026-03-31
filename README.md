@@ -15,7 +15,7 @@ Files uploaded to
 The application
 
 ## Getting started
-You must download a local installation of [Ollama](https://github.com/ollama/ollama). Verfiy your installation using `http://localhost:11434`. You must download models for them to be accessible from within the R Shiny application:
+You must download a local installation of [Ollama](https://github.com/ollama/ollama). Verfiy your installation using `http://localhost:11434` in your browser. You should see an "Ollama is running" message. You must download models for them to be accessible from within the R Shiny application:
 
 ```bash
 ollama pull <model_name>
