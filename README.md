@@ -1,12 +1,13 @@
 # shinychatbot
 Localised R Shiny Interface for Ollama LLM Interaction.
 
-An interactive web application built in R Shiny providing an interface for querying local Large Language Models (LLMs) via Ollama. This tool ensures complete data privacy by keeping all inference and processing local. 
+An interactive web application built in R Shiny providing an interface for querying local Large Language Models (LLMs) via Ollama. This tool ensures complete data privacy and interrogation by keeping all inference and processing local. 
 
 ## Key Features
 - **Deploy local models:** Interface directly with any model hosted on your local Ollama instance.
-- **Customise chat behaviour:** A.
-- **Upload and interrogate complex datasets:** B.
+- **Save chat history:** Save chat logs.
+- **Customise chat behaviour:** Define chat behaviour using customised system prompts.
+- **Interrogate complex datasets:** Upload `.csv`, `.pdf` or `.txt` files to query and analyse within the chat using a bespoke RAG model.
 
 ### RAG model
 Files uploaded to
