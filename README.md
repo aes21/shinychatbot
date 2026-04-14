@@ -36,8 +36,8 @@ Otherwise, install the core package dependencies (all available via CRAN):
 
 - `bslib`
 - `commonmark`
-- `jsonlite`
 - `httr`
+- `jsonlite`
 - `markdown`
 - `shiny`, `shinydashboard`, `shinyjs`, `shinyWidgets`
 - `stringr`
