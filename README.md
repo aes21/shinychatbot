@@ -32,6 +32,16 @@ Install R environment dependencies.
 Rscript -e "renv::restore()"
 ```
 
+Otherwise, install the core package dependencies (all available via CRAN):
+
+- `bslib`
+- `commonmark`
+- `jsonlite`
+- `httr`
+- `markdown`
+- `shiny`, `shinydashboard`, `shinyjs`, `shinyWidgets`
+- `stringr`
+
 Within a new R session, initiate the application:
 
 ```r
